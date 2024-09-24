@@ -9,6 +9,7 @@ import java.util.*;
 public class CollectionLab {
 
     private final static Path FILE_PATH = Paths.get("test.txt");
+    private final static Path STRINGS_FILE_PATH = Paths.get("strings.txt");
 
     private static final Map<String, String> TELEPHONE_HUMAN = new HashMap<>(Map.of(
             "+79228440145", "Артём",
@@ -103,5 +104,6 @@ public class CollectionLab {
         // Ввести строки из файла, записать в список ArrayList.
         // Выполнить сортировку строк по длине.
         System.out.println(sortFileStringsByLength(FILE_PATH));
+        System.out.println(sortFileStringsByLength(STRINGS_FILE_PATH));
     }
 }
