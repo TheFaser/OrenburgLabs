@@ -1,7 +1,6 @@
 package net.flectone.lab.one;
 
 import java.util.Scanner;
-import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class StringLab {
