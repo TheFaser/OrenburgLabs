@@ -5,11 +5,12 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class CollectionLab {
 
-    private final static Path FILE_PATH = Paths.get("test.txt");
     private final static Path STRINGS_FILE_PATH = Paths.get("strings.txt");
+    private final static Path WORD_FILE_PATH = Paths.get("words.txt");
 
     private static final Map<String, String> TELEPHONE_HUMAN = new HashMap<>(Map.of(
             "+79228440145", "Артём",
@@ -103,7 +104,17 @@ public class CollectionLab {
         // Задание:
         // Ввести строки из файла, записать в список ArrayList.
         // Выполнить сортировку строк по длине.
-        System.out.println(sortFileStringsByLength(FILE_PATH));
         System.out.println(sortFileStringsByLength(STRINGS_FILE_PATH));
+
+        // Задание:
+        // Задан файл с текстом на английском языке.
+        // Выделить все различные слова.
+        // Слова, отличающиеся только регистром букв, считать одинаковыми
+        Set<String> list = Files.readAllLines(WORD_FILE_PATH)
+                .stream()
+                .map(String::toLowerCase)
+                .collect(Collectors.toSet());
+
+        System.out.println(list);
     }
 }
