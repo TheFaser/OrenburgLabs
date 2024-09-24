@@ -27,7 +27,7 @@ public class StringLab {
         return stringBuilder.toString();
     }
 
-    private static int countSymbol(String string, String symbol) {
+    private static int countWordsStartingWith(String string, String symbol) {
         int k = 0;
 
         for (String word : string.split(" ")) {
@@ -76,7 +76,7 @@ public class StringLab {
 
         String replacedString = replaceFirstSymbolToLowerCase(inputString, "А");
 
-        int count = countSymbol(replacedString, "а");
+        int count = countWordsStartingWith(replacedString, "а");
 
         System.out.println("Количество слов, начинающихся на \"а\" = " + count);
 
