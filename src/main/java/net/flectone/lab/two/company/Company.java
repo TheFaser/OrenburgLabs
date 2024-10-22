@@ -70,7 +70,7 @@ public class Company {
     }
 
     public List<Employee> getLowestSalaryStaff(int count) {
-        return employees.stream().limit(count)
+        return employees.stream()
                 .sorted(Comparator.comparing(this::currentEmployee))
                 .toList()
                 .reversed()
