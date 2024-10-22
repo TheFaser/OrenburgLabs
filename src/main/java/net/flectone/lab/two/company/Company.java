@@ -7,6 +7,7 @@ import net.flectone.lab.two.employee.EmployeeHour;
 import net.flectone.lab.two.employee.EmployeePercent;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 // Создайте класс компания Company, содержащей сотрудников и реализующей методы:
@@ -61,30 +62,50 @@ public class Company {
         this.employees.removeAll(employees);
     }
 
+    public List<Employee> getTopSalaryStaff(int count) {
+        return employees.stream().limit(count)
+                .sorted(Comparator.comparing(this::currentEmployee))
+                .limit(count)
+                .toList();
+    }
+
+    public List<Employee> getLowestSalaryStaff(int count) {
+        return employees.stream().limit(count)
+                .sorted(Comparator.comparing(this::currentEmployee))
+                .toList()
+                .reversed()
+                .stream()
+                .limit(count)
+                .toList();
+    }
+
+    private double currentEmployee(Employee employee) {
+        double valueToCalculateSalary = 0;
+
+        if (employee instanceof EmployeeHour) {
+            // допустим каждый сотрудник поработал 1 час каждый день т.е. 30 часов
+            valueToCalculateSalary = 30;
+        } else if (employee instanceof EmployeePercent) {
+            // допустим сотрудник получает 10% от зарплаты ему назначенной
+            valueToCalculateSalary = 10;
+        } else if (employee instanceof Manager) {
+            // бонус в виде 5%
+            valueToCalculateSalary = 5;
+        } else if (employee instanceof TopManager) {
+            // бонус в виде 150%, если доход компании более 10 млн рублей
+            valueToCalculateSalary = 150;
+        }
+
+        return employee.calculateSalary(valueToCalculateSalary);
+    }
+
     // получаем прибыль компании, вычитая зарплаты сотрудников
     public double getIncome() {
 
         double income = moneyMonthly;
 
         for (Employee employee : employees) {
-
-            double valueToCalculateSalary = 0;
-
-            if (employee instanceof EmployeeHour) {
-                // допустим каждый сотрудник поработал 1 час каждый день т.е. 30 часов
-                valueToCalculateSalary = 30;
-            } else if (employee instanceof EmployeePercent) {
-                // допустим сотрудник получает 10% от зарплаты ему назначенной
-                valueToCalculateSalary = 10;
-            } else if (employee instanceof Manager) {
-                // бонус в виде 5%
-                valueToCalculateSalary = 5;
-            } else if (employee instanceof TopManager) {
-                // бонус в виде 150%, если доход компании более 10 млн рублей
-                valueToCalculateSalary = 150;
-            }
-
-            income -= employee.calculateSalary(valueToCalculateSalary);
+            income -= currentEmployee(employee);
         }
 
         return income;
