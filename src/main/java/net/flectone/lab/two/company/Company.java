@@ -63,7 +63,7 @@ public class Company {
     }
 
     public List<Employee> getTopSalaryStaff(int count) {
-        return employees.stream().limit(count)
+        return employees.stream()
                 .sorted(Comparator.comparing(this::currentEmployee))
                 .limit(count)
                 .toList();
