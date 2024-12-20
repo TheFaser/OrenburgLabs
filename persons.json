@@ -1,0 +1,17 @@
+[
+  {
+    "name": "John",
+    "email": "test@gmail.com",
+    "birthDate": "2024-12-20"
+  },
+  {
+    "name": "Jane",
+    "email": "test2@gmail.com",
+    "birthDate": "2024-12-20"
+  },
+  {
+    "name": "Jim",
+    "email": "test3@gmail.com",
+    "birthDate": "2024-12-20"
+  }
+]

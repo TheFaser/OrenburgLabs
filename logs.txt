@@ -1,0 +1,70 @@
+дек. 20, 2024 10:46:06 AM net.flectone.lab.three.PersonManager stepByStep
+INFO: Creating persons...
+дек. 20, 2024 10:46:06 AM net.flectone.lab.three.PersonManager lambda$stepByStep$0
+INFO: Created person: Name: John, Email: test@gmail.com, BirthDate: Fri Dec 20 10:46:06 QYZT 2024, Age: 0
+дек. 20, 2024 10:46:06 AM net.flectone.lab.three.PersonManager lambda$stepByStep$0
+INFO: Created person: Name: Jane, Email: test2@gmail.com, BirthDate: Fri Dec 20 10:46:06 QYZT 2024, Age: 0
+дек. 20, 2024 10:46:06 AM net.flectone.lab.three.PersonManager lambda$stepByStep$0
+INFO: Created person: Name: Jim, Email: test3@gmail.com, BirthDate: Fri Dec 20 10:46:06 QYZT 2024, Age: 0
+дек. 20, 2024 10:46:06 AM net.flectone.lab.three.PersonManager stepByStep
+INFO: Loading persons...
+дек. 20, 2024 10:46:06 AM net.flectone.lab.three.PersonManager lambda$stepByStep$1
+INFO: Loaded person: Name: Artem, Email: sobaka@gmail.com, BirthDate: Mon Dec 20 00:00:00 QYZT 2021, Age: 3
+дек. 20, 2024 10:46:06 AM net.flectone.lab.three.PersonManager lambda$stepByStep$1
+INFO: Loaded person: Name: Jane, Email: test@gmail.com, BirthDate: Wed Mar 20 00:00:00 QYZT 2024, Age: 0
+дек. 20, 2024 10:46:06 AM net.flectone.lab.three.PersonManager lambda$stepByStep$1
+INFO: Loaded person: Name: Okey, Email: test3@gmail.com, BirthDate: Fri Dec 05 00:00:00 QYZT 2014, Age: 10
+дек. 20, 2024 10:46:06 AM net.flectone.lab.three.PersonManager lambda$stepByStep$1
+INFO: Loaded person: Name: Oleg, Email: sobaka@yandex.ru, BirthDate: Fri Dec 20 00:00:00 QYZT 2002, Age: 22
+дек. 20, 2024 10:46:06 AM net.flectone.lab.three.PersonManager lambda$stepByStep$1
+INFO: Loaded person: Name: Sasha, Email: sasha@gmail.com, BirthDate: Sun Mar 20 00:00:00 QYZT 2005, Age: 19
+дек. 20, 2024 10:46:06 AM net.flectone.lab.three.PersonManager lambda$stepByStep$1
+INFO: Loaded person: Name: Katya, Email: katya@gmail.com, BirthDate: Fri Dec 05 00:00:00 QYZT 2003, Age: 21
+дек. 20, 2024 10:46:06 AM net.flectone.lab.three.PersonManager lambda$stepByStep$1
+INFO: Loaded person: Name: Denis, Email: den@gmail.com, BirthDate: Thu Dec 20 00:00:00 QYZT 2001, Age: 23
+дек. 20, 2024 10:46:06 AM net.flectone.lab.three.PersonManager lambda$stepByStep$1
+INFO: Loaded person: Name: Timur, Email: timur@gmail.com, BirthDate: Tue Mar 20 00:00:00 QYZT 1951, Age: 73
+дек. 20, 2024 10:46:06 AM net.flectone.lab.three.PersonManager lambda$stepByStep$1
+INFO: Loaded person: Name: Dima, Email: dima3@gmail.com, BirthDate: Sat Dec 05 00:00:00 QYZT 2015, Age: 9
+дек. 20, 2024 10:46:06 AM net.flectone.lab.three.PersonManager lambda$stepByStep$3
+INFO: Person older than 18 year Name: Oleg, Email: sobaka@yandex.ru, BirthDate: Fri Dec 20 00:00:00 QYZT 2002, Age: 22
+дек. 20, 2024 10:46:06 AM net.flectone.lab.three.PersonManager lambda$stepByStep$3
+INFO: Person older than 18 year Name: Sasha, Email: sasha@gmail.com, BirthDate: Sun Mar 20 00:00:00 QYZT 2005, Age: 19
+дек. 20, 2024 10:46:06 AM net.flectone.lab.three.PersonManager lambda$stepByStep$3
+INFO: Person older than 18 year Name: Katya, Email: katya@gmail.com, BirthDate: Fri Dec 05 00:00:00 QYZT 2003, Age: 21
+дек. 20, 2024 10:46:06 AM net.flectone.lab.three.PersonManager lambda$stepByStep$3
+INFO: Person older than 18 year Name: Denis, Email: den@gmail.com, BirthDate: Thu Dec 20 00:00:00 QYZT 2001, Age: 23
+дек. 20, 2024 10:46:06 AM net.flectone.lab.three.PersonManager lambda$stepByStep$3
+INFO: Person older than 18 year Name: Timur, Email: timur@gmail.com, BirthDate: Tue Mar 20 00:00:00 QYZT 1951, Age: 73
+дек. 20, 2024 10:46:06 AM net.flectone.lab.three.PersonManager stepByStep
+INFO: Saving email person map...
+дек. 20, 2024 10:46:06 AM net.flectone.lab.three.PersonManager stepByStep
+INFO: Saved successfully.
+дек. 20, 2024 10:46:06 AM net.flectone.lab.three.PersonManager stepByStep
+INFO: Average age: 20.0
+дек. 20, 2024 10:46:06 AM net.flectone.lab.three.PersonManager lambda$stepByStep$5
+INFO: Person in leap year: Name: Jane, Email: test@gmail.com, BirthDate: Wed Mar 20 00:00:00 QYZT 2024, Age: 0
+дек. 20, 2024 10:46:06 AM net.flectone.lab.three.PersonManager lambda$stepByStep$7
+INFO: Children: Name: Artem, Email: sobaka@gmail.com, BirthDate: Mon Dec 20 00:00:00 QYZT 2021, Age: 3
+дек. 20, 2024 10:46:06 AM net.flectone.lab.three.PersonManager lambda$stepByStep$7
+INFO: Children: Name: Jane, Email: test@gmail.com, BirthDate: Wed Mar 20 00:00:00 QYZT 2024, Age: 0
+дек. 20, 2024 10:46:06 AM net.flectone.lab.three.PersonManager lambda$stepByStep$7
+INFO: Children: Name: Okey, Email: test3@gmail.com, BirthDate: Fri Dec 05 00:00:00 QYZT 2014, Age: 10
+дек. 20, 2024 10:46:06 AM net.flectone.lab.three.PersonManager lambda$stepByStep$7
+INFO: Children: Name: Dima, Email: dima3@gmail.com, BirthDate: Sat Dec 05 00:00:00 QYZT 2015, Age: 9
+дек. 20, 2024 10:46:06 AM net.flectone.lab.three.PersonManager lambda$stepByStep$9
+INFO: Young: Name: Oleg, Email: sobaka@yandex.ru, BirthDate: Fri Dec 20 00:00:00 QYZT 2002, Age: 22
+дек. 20, 2024 10:46:06 AM net.flectone.lab.three.PersonManager lambda$stepByStep$9
+INFO: Young: Name: Sasha, Email: sasha@gmail.com, BirthDate: Sun Mar 20 00:00:00 QYZT 2005, Age: 19
+дек. 20, 2024 10:46:06 AM net.flectone.lab.three.PersonManager lambda$stepByStep$9
+INFO: Young: Name: Katya, Email: katya@gmail.com, BirthDate: Fri Dec 05 00:00:00 QYZT 2003, Age: 21
+дек. 20, 2024 10:46:06 AM net.flectone.lab.three.PersonManager lambda$stepByStep$9
+INFO: Young: Name: Denis, Email: den@gmail.com, BirthDate: Thu Dec 20 00:00:00 QYZT 2001, Age: 23
+дек. 20, 2024 10:46:06 AM net.flectone.lab.three.PersonManager lambda$stepByStep$11
+INFO: Older: Name: Timur, Email: timur@gmail.com, BirthDate: Tue Mar 20 00:00:00 QYZT 1951, Age: 73
+дек. 20, 2024 10:46:06 AM net.flectone.lab.three.PersonManager stepByStep
+INFO: Printing older persons names...
+дек. 20, 2024 10:46:06 AM net.flectone.lab.three.PersonManager lambda$stepByStep$13
+INFO: Name: Timur
+дек. 20, 2024 10:46:08 AM net.flectone.lab.three.PersonManager stepByStep
+INFO: Time: 1887ms
