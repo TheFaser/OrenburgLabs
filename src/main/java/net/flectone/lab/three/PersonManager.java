@@ -20,6 +20,9 @@ import java.util.logging.SimpleFormatter;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
+/**
+ * Class for working with Person objects
+ */
 public class PersonManager {
 
     private final Logger LOGGER = Logger.getLogger(PersonManager.class.getName());
@@ -44,6 +47,9 @@ public class PersonManager {
         LOGGER.addHandler(fileHandler);
     }
 
+    /**
+     * Completing task
+     */
     public void stepByStep() {
         // 1.
         // Создайте список объектов класса Person с полями name и дата рождения, email.
@@ -145,6 +151,13 @@ public class PersonManager {
         LOGGER.info("Time: " + (end - start) + "ms");
     }
 
+    /**
+     * Create person object
+     * @param name person name
+     * @param email person email
+     * @param birthDate person birth date
+     * @return Person object
+     */
     public Person create(@NonNull String name, @NonNull String email, @NonNull Date birthDate) {
         if (birthDate.getYear() > new Date().getYear()) {
             throw new IllegalArgumentException("Date of birth must be less than or equal to the year");
@@ -157,6 +170,10 @@ public class PersonManager {
         return new Person(name, email, birthDate);
     }
 
+    /**
+     * Create 3 persons
+     * @return List of persons
+     */
     public List<Person> createPersons() {
         List<Person> persons = List.of(
                 create("John", "test@gmail.com", new Date()),
@@ -167,6 +184,12 @@ public class PersonManager {
         return persons;
     }
 
+    /**
+     * Load persons from file
+     * @param filePath file path
+     * @return List of persons
+     * @throws IOException if file not found
+     */
     public List<Person> loadPersons(String filePath) throws IOException{
 
         List<Person> persons = new ArrayList<>();
@@ -178,6 +201,12 @@ public class PersonManager {
         return persons;
     }
 
+    /**
+     * Save persons to file
+     * @param object object to save
+     * @param filePath file path
+     * @throws IOException if file error
+     */
     public void save(Object object, String filePath) throws IOException {
         try (Writer writer = Files.newBufferedWriter(Paths.get(filePath))) {
             GSON.toJson(object, writer);
@@ -196,6 +225,11 @@ public class PersonManager {
         }
     }
 
+    /**
+     * Calculate average age
+     * @param persons list of persons
+     * @return average age
+     */
     public double averageAge(List<Person> persons) {
         return persons.stream()
                 .mapToInt(Person::getAge)
@@ -203,6 +237,11 @@ public class PersonManager {
                 .orElse(0);
     }
 
+    /**
+     * Check email
+     * @param email String email
+     * @return true if email is valid
+     */
     public boolean isEmail(String email) {
         return EMAIL_PATTERN.matcher(email).find();
     }
