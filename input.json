@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Artem",
+    "email": "sobaka@gmail.com",
+    "birthDate": "2021-12-20"
+  },
+  {
+    "name": "Jane",
+    "email": "test@gmail.com",
+    "birthDate": "2024-3-20"
+  },
+  {
+    "name": "Okey",
+    "email": "test3@gmail.com",
+    "birthDate": "2014-12-05"
+  },
+  {
+    "name": "Oleg",
+    "email": "sobaka@yandex.ru",
+    "birthDate": "2002-12-20"
+  },
+  {
+    "name": "Sasha",
+    "email": "sasha@gmail.com",
+    "birthDate": "2005-3-20"
+  },
+  {
+    "name": "Katya",
+    "email": "katya@gmail.com",
+    "birthDate": "2003-12-05"
+  },
+  {
+    "name": "Denis",
+    "email": "den@gmail.com",
+    "birthDate": "2001-12-20"
+  },
+  {
+    "name": "Timur",
+    "email": "timur@gmail.com",
+    "birthDate": "1951-3-20"
+  },
+  {
+    "name": "Dima",
+    "email": "dima3@gmail.com",
+    "birthDate": "2015-12-05"
+  }
+]
