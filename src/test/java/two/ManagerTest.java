@@ -1,4 +1,5 @@
-import net.flectone.lab.two.company.Manager;
+package two;
+
 import net.flectone.lab.two.company.Operator;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

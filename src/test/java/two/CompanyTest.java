@@ -1,3 +1,5 @@
+package two;
+
 import net.flectone.lab.two.company.Company;
 import net.flectone.lab.two.company.Manager;
 import net.flectone.lab.two.company.Operator;

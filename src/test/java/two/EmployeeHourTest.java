@@ -1,3 +1,5 @@
+package two;
+
 import net.flectone.lab.two.employee.EmployeeHour;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
